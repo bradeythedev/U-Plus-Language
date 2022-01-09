@@ -1,0 +1,14 @@
+<Template1.upe> /*This is a comment! the first argument in <angled brackets> must be at the very start of the index and is the file the compiler will output. It does not have to end in .upe, and can have no file extension if you would prefer.*/
+<Template1-Example1.ups> /*The next set of angled brackets is the main .ups file and must be included. Every set of angled brackets after this one represents other .ups files that the compiler will include in the .upe, although if you do not want to include any other .ups files you do not have to.*/
+
+IO.GraphicsMode = false; /*This says we will not be using the graphical mode, rather the terminal/console mode. In graphics mode, we can use every item within IO except Write. However, because we used terminal/console mode, we are able to use Write, but not Look or Draw. This line that determines the graphics mode is necessary, as it does not have a default value.*/
+
+string Feedback;
+safe(string Error, Template1-Example1.Error(Error, Feedback)) /*This is where the main method/function is executed, and is usually in a safe loop. The safe loop ensures that if something goes wrong with the thing inside the curly brackets, the thing in the regular brackets will execute. If that also fails, the application will crash. The safe loop can be used in regular .ups code, and is not required here, but is recommended.*/
+{
+    Template1-Example1.Main();
+}
+
+/*It is worth noting that the .upi cannot contain methods or functions of its own, and can only call them from .ups files. As for just what code can be included, that is undecided currently, aand it may be decided the only code allowed in is the execution of a single method or function (aside from the graphics mode bool and compiler data at the top obviously).*/
+
+/*When execution reaches here, the application will close.*/

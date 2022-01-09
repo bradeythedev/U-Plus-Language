@@ -1,0 +1,12 @@
+function Main() /*This is the main function, as defined in the .upi file. This does not need to be called Main, and could be a method instead of a function, but for simplicity's sake this configuration has been chosen.*/
+{
+    IO.Write.PrintString("Hello, World!"); /*This function prints the string "Hello, World!" to the console. If we were in graphics mode, this would cause an error from the compiler.*/
+}
+
+method Error(string Error, string Feedback) /*Here, a method is used instead of a function, because a method must return a variable, wheras a function does not need to.*/
+{
+    IO.Write.PrintString(Error); /*This prints the Error string we got from the safe loop to the screen.*/
+
+    Feedback = IO.Read.ReadString(); /*When the user types a string and presses enter, we will recieve the string they typed, and we will set the Feedback string to that input.*/
+    return Feedback; /*Because this is a method, it must return a value, so we will return the Feedback string to the .upi, where this method was called.*/
+}
