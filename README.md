@@ -8,11 +8,25 @@ This is the repository for the U+ (U Plus) programming language
   - [ ] Logic
   - [ ] IO
   - [ ] Variables
+  - [ ] Loops
 - [ ] Executable/binary format (.upe)
+  - [ ] Logic
+  - [ ] IO
+  - [ ] Variables
+  - [ ] Loops
 - [ ] Parakeet Runtime for Windows (C#)
+  - [ ] Logic
+  - [ ] IO
+  - [ ] Variables
+  - [ ] Loops
 - [ ] Pelican Compiler for Windows (C#)
   - [ ] Conversion from .upi and .ups to .upc (maybe seperate file, or maybe just variables in the compiler - haven't decided)
+    - [ ] Loops
   - [ ] Conversion from .upc/simplified code to .upe
+    - [ ] Logic
+    - [ ] IO
+    - [ ] Variables
+    - [ ] Loops
 - [ ] Useful documentation
   - [ ] Actually starting (as in doing something and not just saying something is being done - could take a while)
 
