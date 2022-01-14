@@ -2,6 +2,10 @@
 
 This is the repository for the U+ (U Plus) programming language
 
+# THIS PROJECT IS CURRENTLY DISCONTINUED
+## It is possible development may continue in the future, but currently it is unlikely to resume anytime soon.
+## Instead, my language efforts have merged with another developer to create https://github.com/Bright-Language/Bright-Programming-Language
+
 ## Current State and Todo
 
 - [ ] Syntax/class format (.upi and .ups)
